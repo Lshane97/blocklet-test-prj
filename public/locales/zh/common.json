@@ -1,0 +1,9 @@
+{
+  "Save": "保存",
+  "Edit": "编辑",
+  "Cancel": "取消",
+  "Field_Err_Length_Empty": "请输入{{key}}",
+  "Field_Err_Email_Format": "邮箱格式有误",
+  "Field_Err_Phone_Format": "手机号格式有误",
+  "Success": "成功"
+}

@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 
+const { i18n } = require('./next-i18next.config');
+
 const whenDev = process.env.NODE_ENV === 'development';
 
 const getDevNextConfig = () => {
@@ -21,6 +23,16 @@ const getDevNextConfig = () => {
 
 const nextConfig = {
   reactStrictMode: false,
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/profile',
+        permanent: false,
+      },
+    ];
+  },
+  i18n,
   ...getDevNextConfig(),
 };
 

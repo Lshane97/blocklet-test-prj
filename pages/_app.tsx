@@ -1,8 +1,12 @@
 import Head from 'next/head';
 import Script from 'next/script';
+import { appWithTranslation } from 'next-i18next';
+import Header from './_header';
+import Theme from './_theme';
+
 import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
+const App = ({ Component, pageProps }: any) => {
   return (
     <>
       <Head>
@@ -12,9 +16,12 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#4F6AF5" />
       </Head>
       <Script src="__blocklet__.js" />
-      <Component {...pageProps} />
+      <Theme>
+        <Header />
+        <Component {...pageProps} />
+      </Theme>
     </>
   );
-}
+};
 
-export default MyApp;
+export default appWithTranslation(App);

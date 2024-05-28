@@ -1,0 +1,9 @@
+{
+  "Save": "Save",
+  "Edit": "Edit",
+  "Cancel": "Cancel",
+  "Field_Err_Length_Empty": "{{key}} is required",
+  "Field_Err_Email_Format": "email format error",
+  "Field_Err_Phone_Format": "phone format error",
+  "Success": "Success"
+}
