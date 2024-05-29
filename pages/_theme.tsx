@@ -1,6 +1,6 @@
 'use-client';
 import { FC, PropsWithChildren, useEffect, useMemo, useState } from 'react';
-import { ThemeContext } from './context';
+import { ThemeContext } from '../components/context';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 

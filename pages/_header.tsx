@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { ThemeContext } from './context';
+import { ThemeContext } from '@/components/context';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 

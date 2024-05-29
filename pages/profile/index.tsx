@@ -5,9 +5,9 @@ import { useCallback, useEffect, useState } from 'react';
 import EditIcon from '@mui/icons-material/Edit';
 import { Edit, Detail, SkeletonScreen } from '@/components/profile';
 import { getUserProfile, postUserProfile } from '@/request/profile';
+import message from '@/components/message';
 
 import styles from './index.module.css';
-import message from '../message';
 
 const Profile = () => {
   const { t } = useTranslation(['profile', 'common']);

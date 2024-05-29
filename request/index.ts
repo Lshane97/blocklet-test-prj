@@ -1,4 +1,4 @@
-import message from '@/pages/message';
+import message from '@/components/message';
 import axios from 'axios';
 
 const instance = axios.create({
